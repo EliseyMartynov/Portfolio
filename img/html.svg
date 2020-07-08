@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4190"
+   version="1.1"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   width="100"
+   height="100"
+   viewBox="0 0 93.750005 93.749997"
+   sodipodi:docname="html.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview4192"
+     showgrid="true"
+     inkscape:zoom="4"
+     inkscape:cx="39.69479"
+     inkscape:cy="62.57682"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4190"
+     showguides="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:document-units="px"
+     inkscape:snap-page="true" />
+  <title
+     id="title5454">W3 ORG Technologies and Blazons</title>
+  <metadata
+     id="metadata4196">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>W3 ORG Technologies and Blazons</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:date>2018-06-23 (yyyy-mm-dd)</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Victor Westmann</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>None</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Victor Westmann</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier>Victor Westmann</dc:identifier>
+        <dc:relation>Author</dc:relation>
+        <dc:language>English</dc:language>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Open Technologies</rdf:li>
+            <rdf:li>World Wide Web</rdf:li>
+            <rdf:li>SVG</rdf:li>
+            <rdf:li>ODS</rdf:li>
+            <rdf:li>ODF</rdf:li>
+            <rdf:li>MathML</rdf:li>
+            <rdf:li>HTML</rdf:li>
+            <rdf:li>CSS</rdf:li>
+            <rdf:li>JavaScript</rdf:li>
+            <rdf:li>JS</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Victor Westmann</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4194">
+    <linearGradient
+       id="linearGradient5785"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         style="stop-color:#c0cdf9;stop-opacity:1"
+         offset="0"
+         id="stop5787" />
+      <stop
+         style="stop-color:#07092d;stop-opacity:0.28804347"
+         offset="1"
+         id="stop5789" />
+    </linearGradient>
+    <clipPath
+       id="clipPath9086"
+       clipPathUnits="userSpaceOnUse">
+      <use
+         transform="translate(1.009546e-6)"
+         height="300"
+         width="400"
+         y="0"
+         x="0"
+         style="fill:#ffffff;fill-opacity:1"
+         class="low-specularity"
+         xlink:href="#outline1"
+         id="use9088" />
+    </clipPath>
+    <linearGradient
+       gradientTransform="matrix(1.009184,0,0,1.009184,-0.3890738,-0.3831933)"
+       id="shinySpecular-4"
+       xlink:href="#WhiteTransparent-4"
+       x1="33"
+       y1="35"
+       x2="58"
+       y2="60"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="WhiteTransparent-4"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         style="stop-color:white;stop-opacity:1"
+         offset="0"
+         id="stop7606-4" />
+      <stop
+         style="stop-color:white;stop-opacity:0"
+         offset="1"
+         id="stop7608-7" />
+    </linearGradient>
+    <linearGradient
+       id="IcecapTip-6"
+       xlink:href="#WhiteTransparent-4"
+       x1="60"
+       y1="20"
+       x2="90"
+       y2="50"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     aria-label="HTML"
+     transform="matrix(0.19255084,0,0,0.18773009,-3.9387554,-17.54813)"
+     style="font-style:normal;font-weight:normal;font-size:12.80000401px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.06666708px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="text8538" />
+  <g
+     id="g5508"
+     transform="matrix(0.25684686,0,0,0.23284914,-5.1106058,-34.039155)">
+    <g
+       id="g9999"
+       transform="translate(-51.300782,-454.16115)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9977"
+         d="m 252.93613,600.34659 v 0.008 l -179.953127,0.375 33.976557,360.87886 146.86719,40.93165 v 0.4277 l 0.76563,-0.2129 0.76562,0.2129 v -0.4277 l 146.86719,-40.93165 33.97656,-360.87886 -179.95117,-0.375 v -0.008 l -1.6582,0.004 z"
+         style="fill:#e44d26;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9979"
+         d="m 252.24277,631.1708 v 0.006 l -147.91797,0.32032 27.92773,307.43363 120.72266,34.871 v 0.3633 l 0.62891,-0.1816 0.19921,0.057 V 631.1752 h -0.19921 l -1.36133,-0.004 z"
+         style="fill:#e44d26;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.83680797px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#f16529;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.83680797px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 203.41269,177.00965 V 519.5018 L 323.65488,484.7694 351.58261,177.33583 203.6666,177.01551 v -0.006 h -0.25391 z"
+       id="path9981"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     aria-label="5"
+     style="font-style:normal;font-weight:normal;font-size:12.80000401px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.06666696px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="text10091"
+     transform="matrix(0.23794877,0,0,0.19012518,-5.0448056,-23.597283)">
+    <path
+       d="m 122.4692,227.88013 h 179.55686 v 53.0978 H 180.06999 v 43.34131 q 8.25549,-2.25149 16.51098,-3.37724 8.44311,-1.31338 17.4491,-1.31338 51.22155,0 79.74051,25.70459 28.51895,25.51696 28.51895,71.2974 0,45.40518 -31.1457,71.10977 -30.95808,25.70458 -86.11975,25.70458 -23.82834,0 -47.28143,-4.69062 -23.26546,-4.50299 -46.34331,-13.88423 v -56.85029 q 22.89022,13.13373 43.34132,19.7006 20.63872,6.56686 38.83831,6.56686 26.26746,0 41.27744,-12.75848 15.1976,-12.9461 15.1976,-34.89819 0,-22.13972 -15.1976,-34.8982 -15.00998,-12.75848 -41.27744,-12.75848 -15.57285,0 -33.20957,4.12774 -17.63673,3.94012 -37.9002,12.38323 z"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:384.25543213px;line-height:125%;font-family:'Galano Grotesque DEMO';-inkscape-font-specification:'Galano Grotesque DEMO, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:1.06666696px"
+       id="path1165"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
