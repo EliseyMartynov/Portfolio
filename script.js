@@ -34,7 +34,7 @@ function animateIn() {
             setTimeout(() => {
                 mobileNav.style.transform = 'translateX(0px)';
                 mobileNav.style.transition = "0.8s";
-            }, 100)
+            }, 10)
     })
 }
 function animateOut() {
@@ -43,10 +43,15 @@ function animateOut() {
             mobileNav.style.transform = 'translateX(-1000px)';
             mobileNav.style.transition = "1s";
 
-        // Check menu fully get out of screen 100ms interval & hide for tab
-            setInterval(( () => {if(window.getComputedStyle(mobileNav)['transform'] == 'matrix(1, 0, 0, 1, -1000, 0)') {
+        // const of interval for check mobile-nav position to hide it
+            let interval = setInterval(( () => {if(window.getComputedStyle(mobileNav)['transform'] == 'matrix(1, 0, 0, 1, -1000, 0)') {
                 mobileNav.style.display = 'none';
-            }}), 100)
+            }}), 10);
+
+            interval;
+
+//    clearinterval timeout 1100ms because 1000ms transition time + 100ms to let interval time
+            setTimeout((() => clearInterval(interval)), 1100);
     })
 }
 
