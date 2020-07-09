@@ -166,7 +166,7 @@ a {
 }
 
 .portfolio__title {
-   margin: 5rem 0 2.5rem 0;
+   margin: 5rem 0 0.5rem 0;
 }
 
 .portfolio__body /* IT'S TEMP BODY */{
@@ -174,7 +174,6 @@ a {
     flex-direction: column;
     align-items: center;
     margin: 1rem 0 4rem;
-/*    width: 70%;*/
 }
 
 .portfolio__item {
@@ -183,9 +182,13 @@ a {
 }
 .portfolio__item:hover,
 .portfolio__item:active {
-    transform: scale(1.1);
+
     margin: 1rem 0 1.5rem;
     transition: 0.5s;
+}
+
+.portfolio__body a {
+    margin: 2rem 0 1rem 0;
 }
 
 .link {

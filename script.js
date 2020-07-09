@@ -11,7 +11,8 @@ const container = document.querySelector('.container');
 // hard code inserting mobile nav & menu svg
 container.insertAdjacentHTML('afterbegin',
      `<nav class="mobile__nav">
-          <a class="mobile__item_close" href="#home"><span class="mobile__item">Home</span><img src="img/close.svg" alt="close" class="mobile__svg_close" id="close"></a>
+          <img src="img/close.svg" alt="close" class="mobile__svg_close" id="close">
+          <a href="#home"><span class="mobile__item">Home</span></a>
           <a href="#about"><span class="mobile__item">About me</span></a>
           <a href="#skills"><span class="mobile__item">Skills</span></a>
           <a href="#portfolio"><span class="mobile__item">Portfolio</span></a>
@@ -25,6 +26,30 @@ const mobileMenu = document.querySelector('#mobile-menu');
 const close = document.querySelector('#close');
 const mobileItems = document.querySelectorAll('.mobile__item');
 
+//animation functions
+function animateIn() {
+    mobileMenu.addEventListener('click', (e) => {
+            e.preventDefault();
+            mobileNav.style.display = 'grid';
+            setTimeout(() => {
+                mobileNav.style.transform = 'translateX(0px)';
+                mobileNav.style.transition = "0.8s";
+            }, 100)
+    })
+}
+function animateOut() {
+    close.addEventListener('click', (e) => {
+            e.preventDefault();
+            mobileNav.style.transform = 'translateX(-1000px)';
+            mobileNav.style.transition = "1s";
+
+        // Check menu fully get out of screen 100ms interval & hide for tab
+            setInterval(( () => {if(window.getComputedStyle(mobileNav)['transform'] == 'matrix(1, 0, 0, 1, -1000, 0)') {
+                mobileNav.style.display = 'none';
+            }}), 100)
+    })
+}
+
 // event function
 function menuopening() {
 
@@ -35,23 +60,10 @@ function menuopening() {
         homeNav.style.display = "none";
 
 //      click event mobile menu in
-        mobileMenu.addEventListener('click', (e) => {
-            e.preventDefault();
-            mobileNav.style.display = 'flex';
-            setTimeout(() => {
-                mobileNav.style.transform = 'translateX(0px)';
-                mobileNav.style.transition = "0.8s";
-            }, 100)
-        })
+        animateIn();
 
 //      click event mobile menu out
-        close.addEventListener('click', (e) => {
-            e.preventDefault();
-            mobileNav.style.transform = 'translateX(-1000px)';
-            mobileNav.style.transition = "1s";
-            setTimeout(() => mobileNav.style.display = 'none', 1000)
-        })
-
+        animateOut();
     } else {
 
 //      default wide screen menu
@@ -71,4 +83,4 @@ Array.from(mobileItems).forEach(item => item.addEventListener('click', () => {
             mobileNav.style.transform = 'translateX(-1000px)';
             mobileNav.style.transition = "1s";
             setTimeout(() => mobileNav.style.display = 'none', 1000)
-        }))
+}))
