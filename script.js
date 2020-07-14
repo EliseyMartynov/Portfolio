@@ -89,3 +89,151 @@ Array.from(mobileItems).forEach(item => item.addEventListener('click', () => {
             mobileNav.style.transition = "1s";
             setTimeout(() => mobileNav.style.display = 'none', 1000)
 }))
+
+
+//=======SLIDER======//
+
+const slideRight = document.querySelector('#slider-right');
+const slideLeft = document.querySelector('#slider-left');
+
+//taking images arrays
+const images = Array.from(document.querySelectorAll('.portfolio__item'));
+
+//taking description spans arrays
+const spanDesc = Array.from(document.querySelectorAll('.portfolio__spandesc'));
+
+//==========================//
+
+//    circles for slider
+
+const circleBox = document.querySelector('.portfolio__circle');
+
+//making circle as much as portfolio items
+
+for(let i = 0; i < images.length; i++) {
+    let newCircle = document.createElement('span');
+    circleBox.appendChild(newCircle);
+}
+
+//taking array of circles
+const circles = Array.from(document.querySelectorAll('.portfolio__circle span'));
+
+// circle scales with selected image when page loads
+let currentImage = images.find(img => img.classList.contains('portfolio__current'));
+circles[images.indexOf(currentImage)].setAttribute('class', 'portfolio__circle_selected');
+
+//==========================//
+
+//slide on right
+slideRight.addEventListener('click', toRight);
+
+function toRight() {
+
+    rightArrowImg();
+    rightArrowSpan();
+}
+
+//    disable current and enable next IMAGE
+    function rightArrowImg() {
+
+            //    looking for current IMAGE
+    let currentImage = images.find(img => img.classList.contains('portfolio__current'));
+
+        currentImage.classList.remove('portfolio__current');
+        currentImage.classList.add('portfolio__disabled');
+        ('class', 'portfolio__circle_selected');
+
+//        condition if current is last?
+        if(images.indexOf(currentImage) < (images.length - 1)){
+        currentImage.nextElementSibling.classList.remove('portfolio__disabled');
+        currentImage.nextElementSibling.classList.add('portfolio__current');
+
+//        circle moving to right
+        circles[images.indexOf(currentImage)].removeAttribute('class', 'portfolio__circle_selected');
+        circles[images.indexOf(currentImage) + 1].setAttribute('class', 'portfolio__circle_selected');
+
+        } else {
+            images[0].classList.remove('portfolio__disabled');
+            images[0].classList.add('portfolio__current');
+
+//        circle moving to zero if current is last
+        circles[images.indexOf(currentImage)].removeAttribute('class', 'portfolio__circle_selected');
+        circles[0].setAttribute('class', 'portfolio__circle_selected');
+        }
+    }
+
+//    disable current and enable next SPAN
+    function rightArrowSpan() {
+
+            //    looking for current SPAN
+    let currentSpan = spanDesc.find(span => span.classList.contains('portfolio__current'));
+
+        currentSpan.classList.remove('portfolio__current');
+        currentSpan.classList.add('portfolio__disabled');
+
+//        condition if current is last?
+        if(spanDesc.indexOf(currentSpan) < (spanDesc.length - 1)){
+        currentSpan.nextElementSibling.classList.remove('portfolio__disabled');
+        currentSpan.nextElementSibling.classList.add('portfolio__current');
+        } else {
+            spanDesc[0].classList.remove('portfolio__disabled');
+            spanDesc[0].classList.add('portfolio__current');
+        }
+    }
+
+
+//slide on left
+
+slideLeft.addEventListener('click', toLeft);
+
+function toLeft() {
+    leftArrowImg();
+    leftArrowSpan();
+}
+
+//    disable current and enable next IMAGE
+    function leftArrowImg() {
+
+        //    looking for current IMAGE
+    let currentImage = images.find(img => img.classList.contains('portfolio__current'));
+
+        currentImage.classList.remove('portfolio__current');
+        currentImage.classList.add('portfolio__disabled');
+
+//        condition if current is first?
+        if(images.indexOf(currentImage) > 0 ) {
+        currentImage.previousElementSibling.classList.remove('portfolio__disabled');
+        currentImage.previousElementSibling.classList.add('portfolio__current');
+
+//        circle moving to left
+        circles[images.indexOf(currentImage)].removeAttribute('class', 'portfolio__circle_selected');
+        circles[images.indexOf(currentImage) - 1].setAttribute('class', 'portfolio__circle_selected');
+
+        } else {
+            images[images.length - 1].classList.remove('portfolio__disabled');
+            images[images.length - 1].classList.add('portfolio__current');
+
+//        circle moving to end if current is first
+        circles[0].removeAttribute('class', 'portfolio__circle_selected');
+        circles[images.length - 1].setAttribute('class', 'portfolio__circle_selected');
+        }
+    }
+
+//    disable current and enable next SPAN
+    function leftArrowSpan() {
+
+            //    looking for current SPAN
+    let currentSpan = spanDesc.find(span => span.classList.contains('portfolio__current'));
+
+        currentSpan.classList.remove('portfolio__current');
+        currentSpan.classList.add('portfolio__disabled');
+
+//        condition if current is first?
+        if(spanDesc.indexOf(currentSpan) > 0 ){
+        currentSpan.previousElementSibling.classList.remove('portfolio__disabled');
+        currentSpan.previousElementSibling.classList.add('portfolio__current');
+        } else {
+            spanDesc[spanDesc.length - 1].classList.remove('portfolio__disabled');
+            spanDesc[spanDesc.length - 1].classList.add('portfolio__current');
+        }
+    }
