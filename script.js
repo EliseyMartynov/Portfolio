@@ -10,7 +10,7 @@ const container = document.querySelector('.container');
 
 // hard code inserting mobile nav & menu svg
 container.insertAdjacentHTML('afterbegin',
-     `<nav class="mobile__nav">
+     `<nav class="mobile__nav" style="display: none;">
           <img src="img/close.svg" alt="close" class="mobile__svg_close" id="close">
           <a href="#home"><span class="mobile__item">Home</span></a>
           <a href="#about"><span class="mobile__item">About me</span></a>
@@ -80,7 +80,7 @@ function menuopening() {
 
 // listening function when window resized or on load
 window.addEventListener('resize', menuopening)
-window.addEventListener('load', menuopening)
+window.addEventListener('DOMContentLoaded', menuopening)
 
 
 // menu closing for each clicked menu item
@@ -97,7 +97,7 @@ const slideRight = document.querySelector('#slider-right');
 const slideLeft = document.querySelector('#slider-left');
 
 //taking images arrays
-const images = Array.from(document.querySelectorAll('.portfolio__item'));
+const images = Array.from(document.querySelectorAll('.portfolio__link'));
 
 //taking description spans arrays
 const spanDesc = Array.from(document.querySelectorAll('.portfolio__spandesc'));
@@ -141,7 +141,6 @@ function toRight() {
 
         currentImage.classList.remove('portfolio__current');
         currentImage.classList.add('portfolio__disabled');
-        ('class', 'portfolio__circle_selected');
 
 //        condition if current is last?
         if(images.indexOf(currentImage) < (images.length - 1)){
@@ -237,3 +236,38 @@ function toLeft() {
             spanDesc[spanDesc.length - 1].classList.add('portfolio__current');
         }
     }
+
+// MODALS
+
+//array of close buttons
+const closeModal = Array.from(document.querySelectorAll('.portfolio__modal_close'));
+
+//array of 'what's been released?
+const modalBtns = Array.from(document.querySelectorAll('.link__modal'));
+
+//array of modals
+const portfolioModals = Array.from(document.querySelectorAll('.portfolio__modal'));
+
+//gray background
+const modalsMain = document.querySelector('.modals');
+
+//for each clicked span open modal that will be match with index of clicked what's been released?
+modalBtns.forEach((modalBtn, index) => modalBtn.addEventListener('click', () => {
+  modalsMain.style.display = 'flex';
+  portfolioModals[index].style.display = 'block';
+}))
+
+//same with close
+closeModal.forEach((close, index) => close.addEventListener('click', () => {
+  modalsMain.style.display = 'none';
+  portfolioModals[index].style.display = 'none';
+}));
+
+//close event when clicking background behind modal
+window.addEventListener('click', closingModalOnBg);
+
+function closingModalOnBg(e) {
+  if(e.target.classList.contains('modals')) {
+    modalsMain.style.display = 'none';
+  }
+}

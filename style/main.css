@@ -244,6 +244,76 @@ a {
     font-weight: 500;
 }
 
+/*  PORTFOLIO MODALS*/
+
+.link__modal {
+  cursor: pointer;
+}
+
+.modals {
+  display: none;
+  z-index: 10;
+  position: fixed;
+  background-color: rgba(100,100,100, 0.9);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  align-items: center;
+}
+
+.portfolio__modal {
+  display: none;
+  width: 80%;
+  margin: auto;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: var(--bg-gray);
+  animation: modalin .2s;
+}
+
+@keyframes modalin {
+  0% {
+    opacity: 0;
+    transform: scale(.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.portfolio__modal header {
+  padding: 2rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.portfolio__modal header span {
+  position: absolute;
+  font-size: 1.4rem;
+  padding: 0 .4rem;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: .3s;
+}
+
+
+.portfolio__modal li{
+  margin-left: 2rem;
+  padding: 1rem;
+}
+
+.portfolio__modal_close:hover {
+  transition: .3s;
+  transform: rotateX(180deg);
+}
+
 /*-----CONTACTS-----*/
 
 .contacts__title {

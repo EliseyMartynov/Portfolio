@@ -63,11 +63,11 @@ link was taken from max graph blog -->
               <div class="portfolio__slider">
                 <i class="  fa fa-angle-right fa-rotate-180 fa-3x" id="slider-left" aria-hidden="true"></i>
 <!--                ======images========== -->
-                <img src="img/converter.png" alt="portfolio-converter" class="portfolio__item portfolio__current" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">
-                <img src="img/sign-up.png" alt="portfolio-sign-up" class="portfolio__item portfolio__disabled">
-                <img src="img/todo-app.png" alt="portfolio-sign-up" class="portfolio__item portfolio__disabled">
+                <a href="https://magistrfox.github.io/Length-converter/" class="portfolio__current portfolio__link"><img src="img/converter.png" alt="portfolio-converter" class="portfolio__item"></a>
+                <a href="https://magistrfox.github.io/UI-component-sign-up/" class='portfolio__disabled portfolio__link'><img src="img/sign-up.png" alt="portfolio-sign-up" class="portfolio__item"></a>
+                <a href="https://magistrfox.github.io/todo-app/" class='portfolio__disabled portfolio__link'><img src="img/todo-app.png" alt="portfolio-sign-up" class="portfolio__item"></a>
 <!--                ======images========== -->
-                <i class="fa fa-angle-right fa-3x" id="slider-right" aria-hidden="true"></i>
+                  <i class="fa fa-angle-right fa-3x" id="slider-right" aria-hidden="true"></i>
               </div>
 <!--              circles-->
             <div class="portfolio__circle">
@@ -76,20 +76,53 @@ link was taken from max graph blog -->
 <!--       ==============descriptions============ -->
             <span class='portfolio__spandesc portfolio__current'>
               <a href="https://magistrfox.github.io/Length-converter/" class="link">Length converter</a> |
-              <a href="https://github.com/magistrfox/Length-converter" class="link">Repository</a>
+              <a href="https://github.com/magistrfox/Length-converter" class="link">Repository</a> |
+              <a class="link link__modal">What's been released?</a>
             </span>
             <span class='portfolio__spandesc portfolio__disabled'>
               <a href="https://magistrfox.github.io/UI-component-sign-up/" class="link">UI component: sign up</a> |
-              <a href="https://github.com/magistrfox/UI-component-sign-up" class="link">Repository</a>
+              <a href="https://github.com/magistrfox/UI-component-sign-up" class="link">Repository</a> |
+              <a class="link link__modal">What's been released?</a>
             </span>
             <span class='portfolio__spandesc portfolio__disabled'>
               <a href="https://magistrfox.github.io/todo-app/" class="link">To-do app.</a> |
-              <a href="https://github.com/magistrfox/todo-app" class="link">Repository</a>
+              <a href="https://github.com/magistrfox/todo-app" class="link">Repository</a> |
+              <a class="link link__modal">What's been released?</a>
             </span>
 <!--       ==============descriptions============ -->
           </div>
         </div>
      </div>
+     <div class="modals">
+       <section class="portfolio__modal">
+                  <header>Length converter <span class="portfolio__modal_close">&times;</span></header>
+                  <p>
+                    <ul>
+                      <li>Working with DOM elements</li>
+                      <li>addEventListeners with &lsaquo;select&rsaquo;</li>
+                      <li>Bit styling</li>
+                      <li>Thanks to Traversy Media for idea to do that</li>
+                    </ul>
+       </section>
+       <section class="portfolio__modal">
+        <header>UI component: sign up <span class="portfolio__modal_close">&times;</span></header>
+        <p>
+          <ul>
+            <li>Form validation (includes e-mail regex). Thanks for ideas to <i>https://www.sitepoint.com/learn-regex/</i></li>
+            <li>Styling</li>
+            <li>Thanks to <i>Traversy Media</i> for idea to do that</li>
+          </ul>
+       </section>
+       <section class="portfolio__modal">
+        <header>To-do app. <span class="portfolio__modal_close">&times;</span></header>
+        <p>
+          <ul>
+            <li>Classes. <i>Traversy Media</i> showed how to do that.</li>
+            <li>Working with storage. <i>Traversy Media</i> showed how to do that.</li>
+            <li>Thanks to <i>Traversy Media</i> for cool example!</li>
+          </ul>
+       </section>
+    </div>
 <!--     CONTACTS -->
      <footer class="contacts block" id="contacts">
        <span class="contacts__title block-title">Contacts</span>
