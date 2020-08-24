@@ -307,6 +307,7 @@ a {
 .portfolio__modal li{
   margin-left: 2rem;
   padding: 1rem;
+  word-wrap: break-word;
 }
 
 .portfolio__modal_close:hover {
@@ -326,10 +327,10 @@ a {
 
 .contacts__button {
     padding: 10px;
-    margin-bottom: 2.5rem;
     width: 12rem;
     border-radius: 20px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .contacts__button:hover {
@@ -343,6 +344,7 @@ a {
     align-items: center;
     width: 15rem;
     height: 5rem;
+    margin-top: 2.5rem;
 }
 
 .contacts__img {
@@ -352,7 +354,7 @@ a {
 
 .contacts__img:hover {
     transition: 0.3s;
-    width: 4rem;
+    transform: scale(1.2)
 }
 
 .contacts__items {
