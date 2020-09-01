@@ -269,5 +269,6 @@ window.addEventListener('click', closingModalOnBg);
 function closingModalOnBg(e) {
   if(e.target.classList.contains('modals')) {
     modalsMain.style.display = 'none';
+    portfolioModals.forEach(item => item.style.display = 'none');
   }
 }
