@@ -1,5 +1,4 @@
 * {
-    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     box-sizing: border-box;
     margin: 0;
@@ -10,6 +9,7 @@
 
 html {
     scroll-behavior: smooth; /*thanks to w3 schools*/
+    font-family: 'Roboto', sans-serif;
 }
 
 a:visited,
@@ -266,10 +266,10 @@ a {
   display: none;
   width: 80%;
   margin: auto;
-  border: 2px solid #000;
   border-radius: 10px;
   background-color: var(--bg-gray);
   animation: modalin .2s;
+  box-shadow: 0 5px 20px #333;
 }
 
 @keyframes modalin {
@@ -293,16 +293,15 @@ a {
   position: relative;
 }
 
-.portfolio__modal header span {
+.portfolio__modal header i {
   position: absolute;
-  font-size: 1.4rem;
-  padding: 0 .4rem;
-  top: 0;
-  right: 0;
+  font-size: 2rem;
+  clip-path: circle();
+  top: 2px;
+  right: 5px;
   cursor: pointer;
-  transition: .3s;
+  transition: .5s;
 }
-
 
 .portfolio__modal li{
   margin-left: 2rem;
@@ -311,8 +310,8 @@ a {
 }
 
 .portfolio__modal_close:hover {
-  transition: .3s;
-  transform: rotateX(180deg);
+  transition: .5s;
+  transform: rotate(180deg);
 }
 
 /*-----CONTACTS-----*/
