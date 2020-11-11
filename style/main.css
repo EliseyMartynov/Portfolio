@@ -316,50 +316,10 @@ a {
 
 /*-----CONTACTS-----*/
 
-.contacts__title {
-    margin: 5rem 0 2.5rem 0;
+.contacts a {
+    margin: 2rem 0 2.5rem 0;
 }
 
-.contacts__body {
-    margin: 0 0 2.5rem 0;
-}
-
-.contacts__button {
-    padding: 10px;
-    width: 12rem;
-    border-radius: 20px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.contacts__button:hover {
-    transition: 0.5s;
-    border-radius: 5px;
-}
-
-.contacts__socials {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 15rem;
-    height: 5rem;
-    margin-top: 2.5rem;
-}
-
-.contacts__img {
-    width: 3rem;
-    transition: 0.3s;
-}
-
-.contacts__img:hover {
-    transition: 0.3s;
-    transform: scale(1.2)
-}
-
-.contacts__items {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 0;
-    font-size: 1rem;
-    color: var(--secondary);
+.contacts a:hover {
+  text-decoration: underline;
 }
